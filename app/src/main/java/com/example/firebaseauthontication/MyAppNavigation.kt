@@ -10,7 +10,6 @@ import androidx.navigation.compose.rememberNavController
 import com.example.firebaseauthontication.pages.HomePage
 import com.example.firebaseauthontication.pages.LoginPage
 import com.example.firebaseauthontication.pages.SignUpPage
-//import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.livedata.observeAsState
 import android.widget.Toast
 import androidx.compose.ui.platform.LocalContext
