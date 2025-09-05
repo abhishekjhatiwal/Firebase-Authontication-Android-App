@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.firebase.auth)
+    implementation(libs.play.services.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -63,10 +64,17 @@ dependencies {
     //Live data dependency
     implementation("androidx.compose.runtime:runtime-livedata:1.9.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.3")
-// Example version
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.1")
+    // Example version
     implementation("androidx.compose.ui:ui:1.5.4")
     implementation("androidx.compose.material3:material3:1.1.2")
     implementation("androidx.activity:activity-compose:1.8.0")
     implementation("androidx.navigation:navigation-compose:2.7.4")
     implementation(platform("androidx.compose:compose-bom:2023.10.01"))
+    // Also add the dependencies for the Credential Manager libraries and specify their versions
+    implementation("androidx.credentials:credentials:1.3.0")
+    implementation("androidx.credentials:credentials-play-services-auth:1.3.0")
+    implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
+    // koil image loader
+    implementation("io.coil-kt:coil-compose:2.7.0")
 }

@@ -23,12 +23,6 @@ fun HomePage(
 ) {
     val authState = authViewModel.authState.observeAsState()
 
-//    LaunchedEffect(authState.value) {
-//        when (authState.value) {
-//            is AuthState.UnAuthenticated -> navController.navigate("login")
-//            else -> Unit
-//        }
-//    }
     LaunchedEffect(authState.value) {
         when (authState.value) {
             is AuthState.UnAuthenticated -> {
